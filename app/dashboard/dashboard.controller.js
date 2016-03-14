@@ -7,6 +7,6 @@
 
   function MainController() {
     var vm = this;
-    vm.message = "Hello";
+    vm.message = "Hello World";
   }
 })();
