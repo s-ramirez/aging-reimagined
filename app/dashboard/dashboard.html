@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container container-fluid">
   <div class="row centering">
     <div class="col-md-4 col-sm-6 " ng-repeat="app in main.applications">
-      <div class="application gradient" ng-style="{'background-color': app.color}" ng-href="{{::app.url}}">
+      <div class="application gradient" ng-style="{'background-color': app.color}" ng-click="main.openApp(app.id)">
         <span class="icon" ng-style="{'background-image': 'url('+app.imageUrl+')'}"></span>
         <h1>{{::app.title}}</h1>
       </div>
