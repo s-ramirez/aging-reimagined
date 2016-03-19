@@ -3,8 +3,22 @@
 
   angular
     .module('app')
-    .controller('ApplicationController', ApplicationController);
+    .directive('application', Application);
 
+  function Application() {
+    return {
+      scope: {
+        current: '='
+      },
+      restrict: 'E',
+      replace: true,
+      templateUrl: '/application/application.html',
+      controller: ApplicationController,
+      controllerAs: 'app',
+      bindToController: true
+    }
+  }
+  
   ApplicationController.$inject = ['$routeParams', '$sce', 'ApplicationService'];
 
   function ApplicationController($routeParams, $sce, ApplicationService) {
