@@ -42,6 +42,11 @@ html, body{
   position: absolute;
 }
 
+.navbar.navbar-custom {
+  background-color: #4388ac;
+  color: rgba(255,255,255, 0.84);
+}
+
 .gradient {
   background: -moz-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */

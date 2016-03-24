@@ -2,13 +2,13 @@
   <head>
     <title>Aging Reimagined</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.9/css/bootstrap-material-design.css">
   </head>
   <body ng-style="{'font-size':$root.font+'px'}">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-custom">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#/">
@@ -22,9 +22,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-mocks.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/dashboard/dashboard.controller.js"></script>
-    <script src="app/application/application.directive.js"></script>
-    <script src="app/core/application.service.js"></script>
+    <script src="{{ url_for('static', filename='app/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='app/dashboard/dashboard.controller.js') }}"></script>
+    <script src="{{ url_for('static', filename='app/application/application.directive.js') }}"></script>
+    <script src="{{ url_for('static', filename='app/core/application.service.js') }}"></script>
   </body>
 </html>
