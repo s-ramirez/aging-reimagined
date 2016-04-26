@@ -40,6 +40,20 @@ html, body{
 
 .zoom {
   position: absolute;
+  right: 50px;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+}
+
+.zoom span {
+  cursor: pointer;
+  display: block;
+  background-color: #a6a6a6;
+  color: white;
+  padding: 5px 20px;
+  margin: 5px;
+  border-radius: 5px;
 }
 
 .navbar.navbar-custom {
