@@ -1,16 +1,23 @@
-<div class="container container-fluid">
-  <span class="zoom">
-    <span ng-click="main.zoom(2)">+</span>
-    <span ng-click="main.zoom(-2)">-</span>
-  </span>
-  <div class="row centering" ng-if="!main.currentApp">
-    <div class="col-md-4 col-sm-6 " ng-repeat="app in main.applications">
-      <div class="application gradient" ng-style="{'background-color': app.color}" ng-click="main.openApp(app.id)">
-        <span class="icon" ng-style="{'background-image': 'url('+app.imageUrl+')'}"></span>
-        <h1>{{::app.title}}</h1>
+<div>
+  <div class="container container-fluid" ng-if="!main.currentApplication">
+    <span class="zoom">
+      <span ng-click="main.zoom(2)">+</span>
+      <span ng-click="main.zoom(-2)">-</span>
+    </span>
+    <div class="row centering">
+      <div class="col-md-4 col-sm-6 " ng-repeat="app in main.applications">
+        <div class="application gradient" ng-style="{'background-color': app.color}" ng-click="main.openApp(app)">
+          <span class="icon" ng-style="{'background-image': 'url('+app.imageUrl+')'}"></span>
+          <h1>{{::app.title}}</h1>
+        </div>
       </div>
+    </div>
   </div>
-  <div class="container" ng-if="main.currentApp">
-    <application current="main.currentApp"></application>
+  <div class="application-container" ng-if="main.currentApplication">
+    <div class="application-header">
+      <h2>{{main.currentApplication.title}}</h2>
+      <img class="close-icon" src="static/images/close.png" ng-click="main.closeApp()"/>
+    </div>
+    <application current="main.currentApplication"></application>
   </div>
 </div>

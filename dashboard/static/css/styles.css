@@ -34,6 +34,31 @@ html, body{
   font-size: 2em;
 }
 
+.application-container{
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 50px;
+  border: 1px solid #ccc;
+}
+
+.application-header {
+  padding: 10px 10px 5px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+.application-header h2 {
+  margin: 2px;
+  font-size: 24px;
+}
+
+.application-header .close-icon{
+  position: absolute;
+  height: 30px;
+  right: 20px;
+  top: 7px;
+}
+
 .app-container {
   border: none;
 }

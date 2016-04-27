@@ -10,7 +10,7 @@
       {
         id: 1,
         color: "#e9b31f",
-        url: "http://sramirez.me/ar-community",
+        url: "http://0.0.0.0:5000/",
         imageUrl: "static/images/twitter.png",
         title: "Community"
       },
